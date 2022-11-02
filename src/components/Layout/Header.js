@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <Link href='/'>
-        <a>Logo</a>
+        nboris.dev
       </Link>
 
       <Navigation />
