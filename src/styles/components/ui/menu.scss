@@ -1,0 +1,77 @@
+.menu-toggle {
+  @include reset-btn;
+  width: 40px;
+  height: 13px;
+
+  span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $text-color-dark;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      width: 23px;
+      height: 100%;
+      background-color: inherit;
+      content: '';
+    }
+
+    &::before {
+      right: 0;
+      transform: translateY(-5px);
+    }
+
+    &::after {
+      left: 0;
+      transform: translateY(5px);
+    }
+  }
+
+  &_active span {
+
+    &::before,
+    &::after {
+      width: 15px;
+      transform-origin: left center;
+    }
+
+    &::before {
+      left: 0;
+      transform: rotate(-23deg)
+    }
+
+    &::after {
+      transform: rotate(23deg)
+    }
+  }
+}
+
+.menu {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+
+  &__item {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 100%;
+    color: $text-color-light;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

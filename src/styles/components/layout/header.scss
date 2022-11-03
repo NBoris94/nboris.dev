@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 0;
+  background-color: $bg-color-light;
+  z-index: 9;
+
+  &_dark {
+    background-color: $bg-color-dark;
+
+    .logo {
+      color: $text-color-light;
+    }
+
+    .menu-toggle {
+      span {
+        background-color: $text-color-light;
+      }
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

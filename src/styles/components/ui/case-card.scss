@@ -1,0 +1,61 @@
+.case-card {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid $bg-color-light;
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0;
+    text-decoration: none;
+  }
+
+  &__title {
+    width: 675px;
+    margin-right: 50px;
+    color: $text-color-light;
+  }
+
+  &__category {
+    margin: 0;
+    font-family: 'Conthrax', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 100%;
+    color: #BBBBBB;
+  }
+
+  &__arrow {
+    margin-left: auto;
+
+    svg {
+
+      transform-origin: center center;
+      transform: rotate(-90deg) translateY(-24px);
+      fill: $bg-color-light;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+
+    opacity: 0;
+  }
+
+  &__desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+
+    opacity: 0;
+  }
+}

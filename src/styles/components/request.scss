@@ -1,0 +1,15 @@
+.request {
+  background-color: $bg-color-dark;
+
+  &__title {
+    color: $text-color-light;
+  }
+
+  &__text {
+    color: $text-color-light;
+  }
+
+  &__email {
+    font-size: 3rem;
+  }
+}

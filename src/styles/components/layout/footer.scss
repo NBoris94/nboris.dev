@@ -1,0 +1,37 @@
+.footer {
+  position: relative;
+  padding: 100px 0;
+
+  &__group {
+    position: relative;
+    padding-top: 30px;
+    border-top: 1px solid $bg-color-dark;
+  }
+
+  &__social {
+    .social__link {
+      color: $text-color-dark;
+    }
+  }
+
+  &__copyright {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  &__up {
+    @include reset-btn;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__arrow svg {
+    transform-origin: center center;
+    transform: rotate(180deg);
+  }
+}

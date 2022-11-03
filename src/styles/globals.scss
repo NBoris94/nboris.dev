@@ -1,2 +1,20 @@
+@import './base/fonts';
 @import './base/variables';
 @import './base/mixins';
+@import './base/normallize';
+@import './base/base';
+
+
+@import './components/ui/menu';
+@import './components/ui/contacts';
+@import './components/ui/text';
+@import './components/ui/btn';
+@import './components/ui/case-card';
+@import './components/layout/container';
+@import './components/layout/header';
+@import './components/layout/footer';
+@import './components/layout/nav';
+@import './components/layout/section';
+@import './components/request';
+
+@import './components/pages/index';

@@ -1,28 +1,25 @@
-import Link from "next/link";
+import Social from "../Social/Social"
+import { email } from "../../data/contacts";
+import Menu from "../Menu/Menu";
+import Container from "../Grid/Container";
 
-const Navigation = () => {
+const Navigation = ({ isOpenMenu, handleToggleMenu }) => {
   return (
-    <nav>
-      <button>Открыть меню</button>
-      <div>
-        <ul>
-          <li>
-            <Link href={'/'}>Главная</Link>
-          </li>
-          <li>
-            <Link href={'/cases'}>Портфолио</Link>
-          </li>
-          <li>
-            <Link href={'/about'}>Обо мне</Link>
-          </li>
-        </ul>
-        <div>
-          <a href="mailto:hello@nboris.dev">hello@nboris.dev</a>
-          <ul>
-            <li><a href="#">vkontakte</a></li>
-            <li><a href="#">github</a></li>
-            <li><a href="#">telegram</a></li>
-          </ul>
+    <nav className="header_nav nav">
+      <button
+        className={`menu-toggle ${isOpenMenu ? 'menu-toggle_active' : ''}`}
+        aria-label="Открыть/закрыть меню"
+        onClick={handleToggleMenu}
+      >
+        <span></span>
+      </button>
+      <div className={`nav__menu ${isOpenMenu ? 'nav__menu_active' : ''}`}>
+        <div className="nav__group">
+          <Menu />
+          <div className="nav__contacts">
+            <a className="nav__email email" href={`mailto:${email}`}>{email}</a>
+            <Social className="nav__social" />
+          </div>
         </div>
       </div>
     </nav>

@@ -1,0 +1,42 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Conthrax Sb', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 100%;
+  color: $text-color-light;
+  text-transform: uppercase;
+  padding-right: 25px;
+
+  &_dark {
+    color: $text-color-dark;
+
+    .btn__arrow svg {
+      fill: $text-color-dark;
+    }
+  }
+
+  &__arrow {
+    margin-left: 25px;
+
+    svg {
+      transform-origin: center center;
+      transform: rotate(-90deg);
+      fill: $text-color-light;
+
+      rect:first-child {
+        width: 40px;
+        x: 26.01099;
+      }
+    }
+  }
+}
+
+button.btn {
+  @include reset-btn;
+}
+
+a.btn {
+  @include reset-link;
+}

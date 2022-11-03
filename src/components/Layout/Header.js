@@ -1,14 +1,47 @@
-import Link from "next/link";
-import Navigation from "./Navigation";
+import Link from "next/link"
+import { useRouter } from "next/router"
+import { useState } from "react"
+import Container from "../Grid/Container"
+import Navigation from "./Navigation"
+
+const handleClass = (pathname, isOpenMenu) => {
+  let style = 'header';
+
+  if (pathname === '/cases' || isOpenMenu) {
+    style += ' header_dark'
+  }
+
+  return style;
+}
 
 const Header = () => {
-  return (
-    <header>
-      <Link href='/'>
-        nboris.dev
-      </Link>
+  const router = useRouter();
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-      <Navigation />
+  const handleToggleMenu = () => {
+    setIsOpenMenu(prev => {
+      if (!prev) {
+        document.body.style.overflow = 'hidden';
+      }
+      else {
+        document.body.style.overflow = 'auto';
+      }
+
+      return !prev
+    })
+  }
+
+  return (
+    <header className={handleClass(router.pathname, isOpenMenu)}>
+      <Container>
+        <div className="header__group">
+          <Link className="header__logo logo" href='/'>
+            nboris.dev
+          </Link>
+
+          <Navigation isOpenMenu={isOpenMenu} handleToggleMenu={handleToggleMenu} />
+        </div>
+      </Container>
     </header>
   );
 }
