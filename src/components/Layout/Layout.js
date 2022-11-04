@@ -1,5 +1,6 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./Header"
+import Footer from "./Footer"
+import Request from "../Request/Request"
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,8 @@ const Layout = ({ children }) => {
 
       <main>
         {children}
+
+        <Request />
       </main>
 
       <Footer />

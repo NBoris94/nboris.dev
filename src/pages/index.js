@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
 import FirstScreen from "../components/FirstScreen/FirstScreen"
-import LastCases from "../components/LastCases/LastCases"
+import LastCases from "../components/Cases/LastCases/LastCases"
 import ShortAbout from "../components/ShortAbout/ShortAbout"
-import Request from "../components/Request/Request"
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
         <FirstScreen />
         <LastCases />
         <ShortAbout />
-        <Request />
       </Layout>
     </>
   )

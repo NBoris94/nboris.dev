@@ -1,0 +1,21 @@
+.cases {
+  background-color: $bg-color-dark;
+
+  &__title {
+    color: $text-color-light;
+  }
+
+  &__caption {
+    max-width: 406px;
+    color: $text-color-light;
+  }
+
+  &__filter {
+    margin: 100px 0;
+  }
+
+  &__list {
+    @include reset-list;
+
+  }
+}

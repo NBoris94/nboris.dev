@@ -10,6 +10,7 @@
 @import './components/ui/text';
 @import './components/ui/btn';
 @import './components/ui/case-card';
+@import './components/ui/filter';
 @import './components/layout/container';
 @import './components/layout/header';
 @import './components/layout/footer';
@@ -17,4 +18,5 @@
 @import './components/layout/section';
 @import './components/request';
 
-@import './components/pages/index';
+@import './pages/index';
+@import './pages/cases';

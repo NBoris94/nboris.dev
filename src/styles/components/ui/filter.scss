@@ -1,0 +1,26 @@
+.filter {
+  @include reset-list;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  width: 100%;
+
+  &__item {}
+
+  &__btn {
+    @include reset-btn;
+    font-family: 'Conthrax Sb', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 100%;
+    color: $text-color-light;
+  }
+
+  &__divider {
+    width: 20px;
+    height: 1px;
+    background-color: $text-color-light;
+  }
+}
