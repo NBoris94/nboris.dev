@@ -2,12 +2,20 @@
 title: 'ПластПолиэфир'
 cardTitle: 'ПластПолиэфир - Производство и продажа полиэфирных смол и композиционных материалов'
 date: '04.11.2022'
-category: 'Корпоративный'
+categories: ['Корпоративный']
 shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing.'
-imgSrc: '/img/plastpolifir/thumbnail.jpg'
-imgAlt: ''
-imgWidth: ''
-imgHeight: ''
+img: {
+  src: '/img//thumbnail.jpg',
+  alt: '',
+  width: '',
+  height: '',
+}
+coverImg: {
+  src: '/img/plastpolifir/cover.jpg',
+  alt: '',
+  width: '',
+  height: '',
+}
 ---
 
 ### Описание

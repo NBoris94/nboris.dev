@@ -2,12 +2,20 @@
 title: 'Автошкола Перекресток'
 cardTitle: 'Автошкола Перекресток'
 date: '03.11.2022'
-category: 'Корпоративный,Образовательный'
+categories: ['Корпоративный', 'Образовательный']
 shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing.'
-imgSrc: '/img/avtoshkola-sk/thumbnail.jpg'
-imgAlt: ''
-imgWidth: ''
-imgHeight: ''
+img: {
+  src: '/img/avtoshkola-sk/thumbnail.jpg',
+  alt: '',
+  width: '',
+  height: ''
+}
+coverImg: {
+  src: '/img/avtoshkola-sk/cover.jpg',
+  alt: '',
+  width: '',
+  height: ''
+}
 ---
 
 ### Описание
