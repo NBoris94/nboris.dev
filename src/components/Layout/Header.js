@@ -19,16 +19,7 @@ const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const handleToggleMenu = () => {
-    setIsOpenMenu(prev => {
-      if (!prev) {
-        document.body.style.overflow = 'hidden';
-      }
-      else {
-        document.body.style.overflow = 'auto';
-      }
-
-      return !prev
-    })
+    setIsOpenMenu(prev => !prev)
   }
 
   return (
