@@ -7,7 +7,7 @@ import Arrow from "../../ui/Arrow";
 import Btn from "../../ui/Btn";
 import CasesList from "../CasesList/CasesList";
 
-const LastCases = () => {
+const LastCases = ({ cases }) => {
   return (
     <Section className='last-cases'>
       <Container>
@@ -15,6 +15,7 @@ const LastCases = () => {
         <CasesList
           className="last-cases__cards"
           isLastCases
+          cases={cases}
         />
         <Row>
           <Col></Col>

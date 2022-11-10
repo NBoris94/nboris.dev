@@ -5,7 +5,7 @@ const Filter = ({ className, filter, activeFilters, onToggle }) => {
     <ul className={`${className} filter`}>
       <li className="filter__item">
         <button
-          className={`filter__btn ${activeFilters.length === 0 ? 'gradient gradient_blue' : ''}`}
+          className={`filter__btn ${activeFilters.length === 0 ? 'filter__btn_active' : ''}`}
           type="button"
           onClick={() => onToggle('Все')}
         >
@@ -19,7 +19,7 @@ const Filter = ({ className, filter, activeFilters, onToggle }) => {
           </li>
           <li className="filter__item">
             <button
-              className={`filter__btn ${activeFilters.includes(f.title) ? 'gradient gradient_blue' : ''}`}
+              className={`filter__btn ${activeFilters.includes(f.title) ? 'filter__btn_active' : ''}`}
               type="button"
               onClick={() => onToggle(f.title)}
             >

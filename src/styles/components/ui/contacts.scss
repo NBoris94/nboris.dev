@@ -5,6 +5,25 @@
 
 .email {
   @include link;
+  position: relative;
+
+  &::before {
+    @include btn-transition;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: $blue-gradient;
+    transform-origin: right center;
+    transform: scaleX(0);
+    content: '';
+  }
+
+  &:hover::before {
+    transform-origin: left center;
+    transform: scaleX(1);
+  }
 }
 
 .social {
@@ -22,5 +41,35 @@
 
   &__link {
     @include link;
+    position: relative;
+
+    &::before {
+      @include btn-transition;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      transform-origin: right center;
+      transform: scaleX(0);
+      content: '';
+    }
+
+    &_blue::before {
+      background-image: $blue-gradient;
+    }
+
+    &_green::before {
+      background-image: $green-gradient;
+    }
+
+    &_pink::before {
+      background-image: $pink-gradient;
+    }
+
+    &:hover::before {
+      transform-origin: left center;
+      transform: scaleX(1);
+    }
   }
 }

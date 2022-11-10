@@ -1,14 +1,17 @@
 import Link from "next/link"
-import { menu } from "../../data/menu"
 
 const Menu = () => {
   return (
     <ul className="menu">
-      {menu.map(m => (
-        <li className="menu__item" key={m.id}>
-          <Link className="menu__link" href={m.link}>{m.name}</Link>
-        </li>
-      ))}
+      <li className="menu__item">
+        <Link className="menu__link menu__link_blue-gradient" href="/">Главная</Link>
+      </li>
+      <li className="menu__item">
+        <Link className="menu__link menu__link_green-gradient" href="/cases">Портфолио</Link>
+      </li>
+      <li className="menu__item">
+        <Link className="menu__link menu__link_pink-gradient" href="/about">Обо мне</Link>
+      </li>
     </ul>
   );
 }

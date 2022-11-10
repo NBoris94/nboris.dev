@@ -67,11 +67,69 @@
   }
 
   &__link {
+    position: relative;
     font-size: 4.375rem;
     font-weight: 700;
     line-height: 100%;
-    color: $text-color-light;
+    color: rgba($text-color-light, 0.5);
     text-decoration: none;
     text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      width: 100px;
+      height: 4px;
+      margin-top: -2px;
+      content: '';
+      transform-origin: right center;
+      transform: scaleX(0);
+    }
+
+    &::before {
+      transition: transform 0.3s ease-in-out;
+      left: -130px;
+    }
+
+    &::after {
+      transition: transform 0.3s ease-in-out;
+      right: -130px;
+    }
+
+    &:hover {
+      color: $text-color-light;
+
+      &::before,
+      &::after {
+        transform-origin: left center;
+        transform: scaleX(1);
+      }
+    }
+
+    &_blue-gradient {
+
+      &::before,
+      &::after {
+        background-image: $blue-gradient;
+      }
+    }
+
+    &_green-gradient {
+
+      &::before,
+      &::after {
+        background-image: $green-gradient;
+      }
+    }
+
+    &_pink-gradient {
+
+      &::before,
+      &::after {
+        background-image: $pink-gradient;
+      }
+    }
   }
 }

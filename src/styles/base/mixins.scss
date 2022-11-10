@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin reset-list {
   margin: 0;
   padding: 0;
@@ -29,4 +31,8 @@
   line-height: 100%;
   color: $text-color-light;
   text-decoration: none;
+}
+
+@mixin btn-transition {
+  transition: $line-animation;
 }
