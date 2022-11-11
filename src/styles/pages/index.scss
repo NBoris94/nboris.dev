@@ -1,5 +1,5 @@
 .fs {
-  padding: 150px 0;
+  padding: 100px 0;
 
   &__group {
     position: relative;
@@ -10,7 +10,7 @@
   &__title {
     max-width: 1031px;
     width: 100%;
-    margin-top: 65px;
+    margin-top: 50px;
   }
 
   &__arrow {
@@ -18,14 +18,20 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 150px;
+    height: 150px;
+    border: 1px solid $text-color-dark;
+    border-radius: 50%;
 
     &-icon svg {
       fill: $text-color-dark;
     }
+
+    &:hover {}
   }
 
   &__img {
-    width: 300px;
+    width: 366px;
     margin-left: auto;
   }
 }

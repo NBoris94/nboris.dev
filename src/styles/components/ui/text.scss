@@ -29,6 +29,11 @@
   margin: 0;
 }
 
+.title-wrapper {
+  display: block;
+  overflow: hidden;
+}
+
 .text {
   @include reset-text;
   margin-bottom: 20px;
@@ -47,6 +52,11 @@
 
 .text-row {
   display: block;
+  overflow: hidden;
+
+  &>* {
+    display: block;
+  }
 }
 
 .gradient {

@@ -1,8 +1,21 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useState } from "react"
+import { motion as m } from "framer-motion"
 import Container from "../Grid/Container"
 import Navigation from "./Navigation"
+
+const headerAnimation = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.7,
+      ease: 'easeOut',
+      delay: 1.9
+    }
+  }
+}
 
 const handleClass = (pathname, isOpenMenu) => {
   let style = 'header';
@@ -25,13 +38,16 @@ const Header = () => {
   return (
     <header className={handleClass(router.pathname, isOpenMenu)}>
       <Container>
-        <div className="header__group">
+        <m.div className="header__group"
+        variants={headerAnimation}
+          initial="hidden"
+          animate="show">
           <Link className="header__logo logo" href='/'>
             nboris.dev
           </Link>
 
           <Navigation isOpenMenu={isOpenMenu} handleToggleMenu={handleToggleMenu} />
-        </div>
+        </m.div>
       </Container>
     </header>
   );

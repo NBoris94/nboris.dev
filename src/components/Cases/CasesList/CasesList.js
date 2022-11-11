@@ -1,13 +1,21 @@
-import Link from "next/link";
-import Arrow from "../../ui/Arrow";
-import CaseCard from "../CaseCard/CaseCard";
+import Link from "next/link"
+import CaseCard from "../CaseCard/CaseCard"
 
 const CasesList = ({ className, isLastCases, cases }) => {
 
   return (
-    <ul className={`${className} cases-list`}>
+    <ul
+      className={`${className} cases-list`}
+    >
       {cases && cases.map(c => (
-        <CaseCard key={c.name} {...c} />
+        <li key={c.name}>
+          <CaseCard {...c} />
+        </li>
+      ))}
+      {cases && cases.map(c => (
+        <li key={c.name}>
+          <CaseCard {...c} />
+        </li>
       ))}
     </ul>
   );
