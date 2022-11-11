@@ -27,6 +27,7 @@ const AboutPage = () => {
                     alt={'Изображение Новикова Бориса'}
                     width={675}
                     height={922}
+                    priority
                   />
                 </figure>
               </Col>
