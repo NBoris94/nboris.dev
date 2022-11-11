@@ -5,13 +5,13 @@ date: '03.11.2022'
 categories: ['Корпоративный', 'Образовательный']
 shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing.'
 img: {
-  src: '/img/avtoshkola-sk/thumbnail.jpg',
-  alt: '',
-  width: '',
-  height: ''
+  src: '/img/cases/avtoshkola-sk/thumbnail.svg',
+  alt: 'Логотип автошколы Перекресток',
+  width: '430',
+  height: '460'
 }
 coverImg: {
-  src: '/img/avtoshkola-sk/cover.jpg',
+  src: '/img/cases/avtoshkola-sk/cover.jpg',
   alt: '',
   width: '',
   height: ''
@@ -24,4 +24,5 @@ coverImg: {
 
 ### Технологии
 
-HTML, CSS(SCSS), JS, React, NextJS, Redux, RTK Query, Framer-motion, PHP, Laravel
+HTML, CSS(SCSS), JS, React, NextJS, Redux, RTK Query, Framer-motion, PHP,
+Laravel

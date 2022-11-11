@@ -5,13 +5,13 @@ date: '04.11.2022'
 categories: ['Корпоративный']
 shortDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing.'
 img: {
-  src: '/img//thumbnail.jpg',
-  alt: '',
-  width: '',
-  height: '',
+  src: '/img/cases/plastpolifir/thumbnail.svg',
+  alt: 'Логотип компании ПластПолиэфир',
+  width: '500',
+  height: '348',
 }
 coverImg: {
-  src: '/img/plastpolifir/cover.jpg',
+  src: '/img/cases/plastpolifir/cover.jpg',
   alt: '',
   width: '',
   height: '',

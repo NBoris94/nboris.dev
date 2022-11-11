@@ -41,14 +41,11 @@
 
   &__title {
     color: $text-color-light;
+    margin-bottom: 60px;
   }
 
   &__cards {
     @include reset-list;
-
-    li:first-child .case-card__link {
-      padding-top: 0;
-    }
   }
 
   &__more {

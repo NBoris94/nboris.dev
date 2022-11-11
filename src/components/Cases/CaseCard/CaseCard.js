@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { useRef } from "react"
 import { motion } from "framer-motion"
 import Arrow from "../../ui/Arrow"
 
@@ -74,12 +73,12 @@ const CaseCard = ({ name, title, categories, img, shortDescription }) => {
         <Arrow className="case-card__arrow" />
       </Link>
       <figure className="case-card__img">
-        {/* <Image
+        <Image
           src={img.src}
           alt={img.alt}
           width={img.width}
           height={img.height}
-        /> */}
+        />
       </figure>
       <p className="case-card__desc">{shortDescription}</p>
       <motion.div
