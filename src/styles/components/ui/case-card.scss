@@ -25,6 +25,7 @@
     font-size: 0.8125rem;
     line-height: 100%;
     color: #BBBBBB;
+    transition: all 0.3s ease-out;
   }
 
   &__arrow {
@@ -129,6 +130,33 @@
 
     .case-card__category {
       color: $text-color-light;
+    }
+  }
+}
+
+@media (max-width: $xl) {
+  .case-card {
+    &__title {
+      width: 545px;
+    }
+
+    &__link {
+      padding: 30px 0;
+    }
+
+    &__category {
+      font-size: 0.75rem;
+    }
+
+    &__img {
+      left: 380px;
+      width: 145px;
+      height: 145px;
+    }
+
+    &__desc {
+      width: 220px;
+      height: 145px;
     }
   }
 }

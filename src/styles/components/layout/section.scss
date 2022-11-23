@@ -1,8 +1,18 @@
 .section {
   position: relative;
-  padding: 100px 0;
+  padding: 150px 0;
 
   &__title {
     margin-bottom: 100px;
+  }
+}
+
+@media (max-width: $lg) {
+  .section {
+    padding: 70px 0;
+
+    &__title {
+      margin-bottom: 70px;
+    }
   }
 }

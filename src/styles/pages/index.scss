@@ -1,5 +1,4 @@
 .fs {
-  padding: 100px 0;
 
   &__group {
     position: relative;
@@ -10,7 +9,7 @@
   &__title {
     max-width: 1031px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 90px;
   }
 
   &__arrow {
@@ -26,11 +25,10 @@
     &-icon svg {
       fill: $text-color-dark;
     }
-
-    &:hover {}
   }
 
   &__img {
+    flex-shrink: 0;
     width: 366px;
     margin-left: auto;
   }
@@ -62,4 +60,23 @@
     max-width: 530px;
     width: 100%;
   }
+}
+
+
+@media (max-width: $xl) {
+  .fs {
+
+    &__arrow {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__img {
+      width: 277px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .fs {}
 }

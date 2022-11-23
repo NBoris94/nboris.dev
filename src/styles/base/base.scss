@@ -49,3 +49,9 @@ figure {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (max-width: $xl) {
+  main {
+    padding-top: 101px;
+  }
+}

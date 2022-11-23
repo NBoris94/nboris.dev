@@ -9,3 +9,33 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
 }
+
+@media (max-width: $xl) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: $lg) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: $md) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: $sm) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: $xs) {
+  .container {
+    max-width: 100%;
+  }
+}
