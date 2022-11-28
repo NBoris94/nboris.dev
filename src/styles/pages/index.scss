@@ -65,6 +65,9 @@
 
 @media (max-width: $xl) {
   .fs {
+    &__title {
+      margin-top: 30px;
+    }
 
     &__arrow {
       width: 120px;
@@ -77,6 +80,79 @@
   }
 }
 
-@media (max-width: $lg) {
-  .fs {}
+@media (max-width: $md) {
+  .fs {
+    padding-top: 30px;
+
+    &__group {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 200px;
+      margin-top: -170px;
+    }
+
+    &__arrow {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .last-cases {
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__more {
+      margin-top: 15px;
+    }
+  }
+
+  .short-about {
+    &__more {
+      margin-top: -15px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .fs {
+    padding-top: 0;
+
+    &__img {
+      margin-top: -30px;
+    }
+
+    &__arrow {
+      width: 50px;
+      height: 50px;
+
+      svg {
+        height: 30px;
+      }
+    }
+  }
+
+  .short-about {
+    &__img {
+      margin-bottom: 30px;
+    }
+
+    &__more {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 405.98px) {
+  .fs {
+    &__img {
+      margin-top: 10px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
 }

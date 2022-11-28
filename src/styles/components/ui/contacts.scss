@@ -73,3 +73,25 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .social {
+    &__item {
+      margin-right: 30px;
+    }
+
+    &__link {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media (max-width: 374.98px) {
+  .social {
+    justify-content: space-between;
+
+    &__item {
+      margin-right: 0;
+    }
+  }
+}

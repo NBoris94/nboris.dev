@@ -34,3 +34,10 @@
     padding-bottom: 40px;
   }
 }
+
+@media (max-width: $xs) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

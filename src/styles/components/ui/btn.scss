@@ -65,3 +65,18 @@ button.btn {
 a.btn {
   @include reset-link;
 }
+
+@media (max-width: $md) {
+  .btn {
+    font-size: 0.875rem;
+
+    &__arrow {
+      margin-left: 15px;
+
+      svg rect:first-child {
+        width: 30px;
+        x: 35.01099;
+      }
+    }
+  }
+}

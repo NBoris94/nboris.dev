@@ -82,7 +82,6 @@
 @media (max-width: $xl) {
   .h1 {
     font-size: 3.4375rem;
-    line-height: 130%;
   }
 
   .h2 {
@@ -105,6 +104,52 @@
   }
 
   .h3 {
+    font-size: 1.25rem;
+  }
+
+  .text {
+    &_lg {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .h3 {
+    font-size: 1rem;
+  }
+
+  .text {
+    &_lg {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+
+  .h1,
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 349.98px) {
+
+  .h1,
+  .h2 {
     font-size: 1.25rem;
   }
 }

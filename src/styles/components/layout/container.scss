@@ -20,6 +20,10 @@
   .container {
     max-width: 960px;
   }
+
+  .row {
+    column-gap: 30px;
+  }
 }
 
 @media (max-width: $md) {
@@ -32,10 +36,15 @@
   .container {
     max-width: 540px;
   }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: $xs) {
   .container {
     max-width: 100%;
+    padding: 0 10px;
   }
 }
