@@ -14,13 +14,15 @@ const Navigation = ({ isOpenMenu, handleToggleMenu }) => {
         <span></span>
       </button>
       <div className={`nav__menu ${isOpenMenu ? 'nav__menu_active' : ''}`}>
-        <div className="nav__group">
-          <Menu />
-          <div className="nav__contacts">
-            <a className="nav__email email" href={`mailto:${email}`}>{email}</a>
-            <Social className="nav__social" />
+        <Container>
+          <div className="nav__group">
+            <Menu />
+            <div className="nav__contacts">
+              <a className="nav__email email" href={`mailto:${email}`}>{email}</a>
+              <Social className="nav__social" />
+            </div>
           </div>
-        </div>
+        </Container>
       </div>
     </nav>
   );

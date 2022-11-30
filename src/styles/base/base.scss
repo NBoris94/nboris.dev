@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  padding-top: 120.5px;
+  padding-top: $header-h;
 }
 
 footer {
@@ -52,12 +52,12 @@ figure {
 
 @media (max-width: $xl) {
   main {
-    padding-top: 101px;
+    padding-top: $header-h-xl;
   }
 }
 
 @media (max-width: $xs) {
   main {
-    padding-top: 60.5px;
+    padding-top: $header-h-xs;
   }
 }
