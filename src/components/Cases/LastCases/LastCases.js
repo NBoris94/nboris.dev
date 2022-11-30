@@ -1,13 +1,11 @@
-import Link from "next/link";
-import { motion as m } from "framer-motion";
-import Col from "../../Grid/Col";
-import Container from "../../Grid/Container";
-import Row from "../../Grid/Row";
-import Section from "../../Layout/Section";
-import Btn from "../../ui/Btn";
-import CasesList from "../CasesList/CasesList";
-import { titleAnimation, btnAnimation } from "../../../lib/animation";
-import SectionTitle from "../../Layout/SectionTitle";
+import Link from "next/link"
+import Col from "../../Grid/Col"
+import Container from "../../Grid/Container"
+import Row from "../../Grid/Row"
+import Section from "../../Layout/Section"
+import Btn from "../../ui/Btn"
+import CasesList from "../CasesList/CasesList"
+import SectionTitle from "../../Layout/SectionTitle"
 
 const LastCases = ({ cases }) => {
   return (
@@ -24,19 +22,12 @@ const LastCases = ({ cases }) => {
         <Row>
           <Col></Col>
           <Col>
-            <m.div
-              variants={btnAnimation}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-            >
-              <Btn
-                className="last-cases__more"
-                isLink
-                href="/cases"
-                text="Все работы"
-              />
-            </m.div>
+            <Btn
+              className="last-cases__more"
+              isLink
+              href="/cases"
+              text="Все работы"
+            />
           </Col>
         </Row>
       </Container>
