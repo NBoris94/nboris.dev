@@ -1,4 +1,6 @@
 .about {
+  padding-top: 75px;
+
   &__text {
     max-width: 600px;
   }
@@ -9,5 +11,26 @@
 
   &__h4 {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: $md) {
+  .about {
+    .row {
+      grid-template-columns: 1fr;
+    }
+
+    &__img {
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+
+  }
+}
+
+@media (max-width: $sm) {
+  .about {
+    padding-top: 30px;
   }
 }

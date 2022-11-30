@@ -57,3 +57,11 @@
     background-color: $text-color-light;
   }
 }
+
+@media (max-width: $md) {
+  .filter {
+    &__btn {
+      font-size: 0.875rem;
+    }
+  }
+}
