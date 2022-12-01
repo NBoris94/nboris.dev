@@ -12,11 +12,6 @@ const CasesList = ({ className, isLastCases, cases }) => {
           <CaseCard {...c} />
         </li>
       ))}
-      {cases && cases.map(c => (
-        <li key={c.name}>
-          <CaseCard {...c} />
-        </li>
-      ))}
     </ul>
   );
 }

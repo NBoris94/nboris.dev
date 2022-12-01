@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Arrow from "../../ui/Arrow"
 
-const CaseCard = ({ name, title, categories, img, shortDescription }) => {
+const CaseCard = ({ name, cardTitle, categories, img, shortDescription }) => {
 
   return (
     <article className="case-card">
@@ -11,7 +11,7 @@ const CaseCard = ({ name, title, categories, img, shortDescription }) => {
           <h3
             className="h3"
           >
-            {title}
+            {cardTitle}
           </h3>
         </div>
         <p
