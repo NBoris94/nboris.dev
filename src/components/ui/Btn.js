@@ -10,7 +10,7 @@ const Btn = ({ isLink, isOuterLink, href, type, text, mods, className }) => {
         className={classes}
         href={href}
         target="_blank"
-        rel="noopener nofollow"
+        rel="noopener nofollow noreferrer"
       >
         {text}
         <Arrow
