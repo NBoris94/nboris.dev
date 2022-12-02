@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 3005",
+    "lint": "next lint",
+    "production": "pm2 delete npm && pm2 start npm -- start"
   },
   "dependencies": {
     "framer-motion": "^7.6.5",
